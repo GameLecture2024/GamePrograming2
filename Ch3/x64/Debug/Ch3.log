@@ -1,0 +1,5 @@
+﻿  Inventory.c
+C:\Users\Administrator\Desktop\GamePrograming2\Ch3\Inventory.c(25,17): warning C4013: 'malloc'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\Administrator\Desktop\GamePrograming2\Ch3\Inventory.c(25,15): warning C4047: '=': 'int *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+C:\Users\Administrator\Desktop\GamePrograming2\Ch3\Inventory.c(30,2): warning C4013: 'free'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  Ch3.vcxproj -> C:\Users\Administrator\Desktop\GamePrograming2\Pointer\x64\Debug\Ch3.exe
