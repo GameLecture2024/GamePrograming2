@@ -45,3 +45,16 @@ void NextStage(char(*stage)[STAGE_WIDTH + 1], COORD stagePos)
 {
    
 }
+
+COORD PlusCOORD(COORD pos1, COORD pos2)
+{
+	SHORT newPosx = pos1.X + pos2.X;
+	SHORT newPosy = pos1.Y + pos2.Y;
+	COORD resultPos = { newPosx, newPosy };
+
+	return resultPos;
+}
+
+
+// 아이템 끼리 더한다.
+// 스테이지 2개.
