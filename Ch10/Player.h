@@ -22,7 +22,7 @@ typedef enum _COLOR
 
 typedef enum _Race
 {
-   HUMAN, ORC, TROLL
+   HUMAN = 1, ORC, TROLL
 }RACE;
 
 typedef struct _Player
@@ -35,9 +35,11 @@ typedef struct _Player
 
 void GetPlayerName(Player player);
 void SetPlayerName(Player* playerPtr);
-
 void SetPlayerInput(Player* playerPtr);
+void SetPlayerRace(Player* playerPtr);
+
+void SetPlayer(Player* playerPtr);
 
 void SelectColor(COLOR color);
 
-void ShowPlayerInfo(Player* playerPtr);
+void ShowPlayerInfo(Player* playerPtr, COORD uiPos);

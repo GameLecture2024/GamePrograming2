@@ -1,3 +1,5 @@
-﻿  Player.c
-C:\Users\Administrator\Desktop\GamePrograming2\Ch10\Player.c(37,9): warning C4101: 'tempPlayer' :참조되지 않은 지역 변수입니다.
+﻿  MyGame.c
+  Player.c
+C:\Users\Administrator\Desktop\GamePrograming2\Ch10\Player.c(107,9): warning C4476: 'printf' : 서식 지정자에 알 수 없는 형식 필드 문자 '\xec'이(가) 있습니다.
+  코드를 생성하고 있습니다...
   Ch10.vcxproj -> C:\Users\Administrator\Desktop\GamePrograming2\Pointer\x64\Debug\Ch10.exe

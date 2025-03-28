@@ -8,6 +8,7 @@ void GetPlayerName(Player player)
 
 void SetPlayerName(Player* playerPtr)
 {
+	printf("플레이어의 이름을 작성해주세요\n");
 	char* inputName = malloc(sizeof(inputName));
 	scanf_s("%s", inputName, 10); // '\0'
 
@@ -41,6 +42,41 @@ void SetPlayerInput(Player* playerPtr)
 	}
 }
 
+void SetPlayerRace(Player* playerPtr)
+{
+	printf("플레이어의 종족을 선택해주세요\n");
+	printf("1_Human 2_ORC 3_TROLL\n");
+	int inputNumber = -1;
+	scanf_s("%d", &inputNumber);
+
+	switch (inputNumber)
+	{
+	case 1 :
+		playerPtr->race = HUMAN;
+		return;
+	case 2:
+		playerPtr->race = ORC;
+		return;
+	case 3:
+		playerPtr->race = TROLL;
+		return;
+	default:
+		SetPlayerRace(playerPtr);
+	}
+
+	
+}
+
+void SetPlayer(Player* playerPtr)
+{
+	SetPlayerName(playerPtr);
+	SetPlayerRace(playerPtr);
+
+	printf("플레이어 설정이 완료되었습니다.\n 진행하려면 아무 버튼이나 입력해주세요\n");
+	_getch();
+	system("cls");
+}
+
 
 
 void SelectColor(COLOR color)
@@ -59,19 +95,15 @@ void SelectColor(COLOR color)
 	}
 }
 
-void ShowPlayerInfo(Player* playerPtr)
+void ShowPlayerInfo(Player* playerPtr, COORD uiPos)
 {
-    // 이름, 좌표, 종족
-
-	Player tempPlayer = *playerPtr;
-
-	if (playerPtr == NULL)
-	{
-		return;
-	}
-
-	printf("%s ", playerPtr->name);
-	//GetPlayerName(*playerPtr);
-	//GetPlayerPos(*playerPtr);
-	//GetPlayerRace(*playerPtr);
+	GoToXY(uiPos.X, uiPos.Y);
+	printf("플레이어의 정보");
+	GoToXY(uiPos.X, uiPos.Y + 1);
+	printf("이름 : %s", playerPtr->name);
+	GoToXY(uiPos.X, uiPos.Y + 2);
+	printf("좌표 : [%d,%d]", playerPtr->pos.X, playerPtr->pos.Y);
+	GoToXY(uiPos.X, uiPos.Y + 3);
+	printf("%종족에 해당하는 숫자를 출력한다 (1 : Human 2 : ORC 3 : TROLL) : %d", playerPtr->race);
 }
+

@@ -28,8 +28,6 @@ void ShowStage(char(*stage)[STAGE_WIDTH + 1], COORD pos);
 // x,y좌표에 들어있는 문자를 반환하는 함수
 char ReturnValueFromStage(char(*stage)[STAGE_WIDTH + 1], COORD pos);
 
-char ReturnValueFromStruct(STAGE* stage);
-
 // 다음 스테이지로 이동이 가능한가요?
 BOOL CanMoveStage(char(*stage)[STAGE_WIDTH + 1], COORD playerPos, char exitCharacter);
 // 이동하세요
