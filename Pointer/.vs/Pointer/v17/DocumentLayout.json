@@ -3,13 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GamePrograming2\\Pointer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{06BC040B-2903-4662-AAE9-8EE1AE2BC7EC}|..\\Ch12\\Ch12.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming2\\Ch12\\Rank.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{06BC040B-2903-4662-AAE9-8EE1AE2BC7EC}|..\\Ch12\\Ch12.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming2\\Ch12\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{06BC040B-2903-4662-AAE9-8EE1AE2BC7EC}|..\\Ch12\\Ch12.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming2\\Ch12\\Rank.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06BC040B-2903-4662-AAE9-8EE1AE2BC7EC}|..\\Ch12\\Ch12.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming2\\Ch12\\Rank.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FA019E7-08B2-40A8-8050-759E8A3276A5}|..\\Ch11\\Ch11.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming2\\Ch11\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -31,7 +31,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,39 +55,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Rank.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming2\\Ch12\\Rank.c",
               "RelativeDocumentMoniker": "..\\Ch12\\Rank.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming2\\Ch12\\Rank.c",
               "RelativeToolTip": "..\\Ch12\\Rank.c",
-              "ViewState": "AQIAACAAAAAAAAAAAAAuwEMAAAAAAAAA",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAmwJkAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-04-01T07:04:15.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Rank.h",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming2\\Ch12\\Rank.h",
               "RelativeDocumentMoniker": "..\\Ch12\\Rank.h",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming2\\Ch12\\Rank.h",
               "RelativeToolTip": "..\\Ch12\\Rank.h",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkAAAAXAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAMwBwAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-01T07:04:10.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming2\\Ch12\\main.c",
               "RelativeDocumentMoniker": "..\\Ch12\\main.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming2\\Ch12\\main.c",
               "RelativeToolTip": "..\\Ch12\\main.c",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACYAAAAJAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwDUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-04-01T07:00:57.401Z",
               "EditorCaption": ""
@@ -138,8 +138,7 @@
               "RelativeToolTip": "..\\Ch11\\main.c",
               "ViewState": "AQIAAFwAAAAAAAAAAAAcwGYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-03-31T07:00:51.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T07:00:51.916Z"
             }
           ]
         },

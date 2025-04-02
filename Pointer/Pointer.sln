@@ -53,6 +53,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ch12", "Ch12", "{7153C953-1
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ch12", "..\Ch12\Ch12.vcxproj", "{06BC040B-2903-4662-AAE9-8EE1AE2BC7EC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ch13", "Ch13", "{A8FD8EE9-3E99-4088-8F08-0AA282CD3CD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

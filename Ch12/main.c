@@ -7,38 +7,60 @@
 */
 
 #include "Rank.h"
+#include <stdlib.h>
+#include <conio.h>
 
 int main()
 {
-	printf("1. 파일을 저장하는 함수 구현\n");
-	FileSaveTemp();
-	printf("2. 파일을 읽어오는 함수 구현\n");
-	FileLoadTemp();
-	printf("3. 랭크 구조체를 구현\n");
-
 	Rank ranks[MAXPLAYER];
 	int order = 0;
-	AddRank(ranks, &order, "Bear", 100);
-	AddRank(ranks, &order, "Candy", 150);
-	AddRank(ranks, &order, "Dog", 250);
-	AddRank(ranks, &order, "Dog", 75);
+	//AddRank(ranks, &order, "Bear", 100);
+	//AddRank(ranks, &order, "Candy", 150);
+	//AddRank(ranks, &order, "Dog", 250);
+	//AddRank(ranks, &order, "Dog", 75);
 	
-	//order = LoadRank(RANKFILEPATH, ranks);
+	// 1. 데이터 파일을 로드하는 화면을 구성한다.
 
-	if (order < MAXPLAYER)
+	printf("데이터를 불러오는 중입니다.\n");
+
+	for (int i = 0; i < 10; i++)
 	{
-		printf("새로운 플레이어의 이름을 입력하세요 : \n");
-		char newName[MAXLENGTH];
-		int newScore;
+		printf("...");
+		Sleep(100);
+	}
 
-		scanf("%49s", newName);
-		printf("점수를 입력하세요 : \n");
-		scanf("%d", &newScore);
+	printf("................\n");
+	Sleep(1000);
+	order = LoadRank(RANKFILEPATH, ranks);
+	printf("로딩이 완료되었습니다. 키를 입력해주세요.\n");
+	_getch(); // 키보드 문자 입력을 받는 함수 conio.h
+	system("cls");
 
-		AddRank(ranks, &order, newName, newScore);
-	}						 
+	int firstRank = 0;
 
-	PrintRanking(ranks, order);
+	while (1)
+	{
+		printf("1_랭킹 추가 2_랭킹 확인 3_프로그램 종료 4_랭킹 데이터 삭제 5_1위의 정보를 출력");
+		int input = 0;
+		scanf("%d", &input);
 
-	FileSave(RANKFILEPATH, ranks, order);
+		switch (input)
+		{
+			case 1: AddRankData(ranks, &order); break;
+			case 2: PrintRanking(ranks, order); break;
+			case 3: FileSave(RANKFILEPATH, ranks, order);  return;
+			case 4: DeleteRankData(ranks, &order, 0); break;
+			case 5: 
+				firstRank = FindMaxIndex(ranks, order);
+				printf("랭킹 1위의 이름 : %s, 점수 : %d\n", ranks[firstRank].name, ranks[firstRank].score);
+				break;
+			default: 
+				printf("잘못된 입력입니다. 키를 입력해주세요.\n");
+				_getch();
+				system("cls");
+					break;
+		}
+	}
+
+	
 }

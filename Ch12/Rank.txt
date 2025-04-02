@@ -1,1 +1,4 @@
-1 Alice 100
+1 100 Alice
+2 350 Ber
+3 150 Cer
+4 50 Der
